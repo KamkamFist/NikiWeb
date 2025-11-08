@@ -19,7 +19,8 @@ function MainPage() {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfy4ZRrqUV0wG9E5cgsDacACX5sALs0RhSw&s"
               alt="Logo"
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100%'}}
+              id="logo"
             />
           </div>
         </div>
