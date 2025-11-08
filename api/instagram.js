@@ -1,16 +1,32 @@
-export default async function handler(req, res) {
-  const username = 'kicia.projects';
-  const APIFY_TOKEN = process.env.APIFY_TOKEN; // Twój token Apifys
+// api/instagram.js
+export async function getInstagramPosts(username) {
+  const token = import.meta.env.VITE_APIFY_TOKEN;
+
+  const url = `https://api.apify.com/v2/actor-tasks/instagram-scraper/run-sync-get-dataset-items?token=${token}&username=${username}`;
 
   try {
-    const response = await fetch(
-      `https://api.apify.com/v2/acts/apify~instagram-scraper/run-sync-get-dataset-items?token=${APIFY_TOKEN}&username=${username}&limit=10`
-    );
-    const data = await response.json();
+    const res = await fetch(url);
 
-    res.status(200).json(data);
+    if (!res.ok) {
+      throw new Error(`Błąd API: ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    // Zwracamy tylko potrzebne pola: zdjęcie + opis
+    return data.map(item => ({
+      image: item.imageUrl,
+      caption: item.caption || '',
+    }));
   } catch (error) {
-    console.error('Błąd pobierania danych:', error);
-    res.status(500).json({ error: 'Błąd pobierania danych' });
+    console.error(error);
+    return [];
   }
+}
+
+// Endpoint dla Vite
+export async function handler(req, res) {
+  const username = 'kicia.projects'; // możesz zmienić na dynamiczne, np. req.query.username
+  const posts = await getInstagramPosts(username);
+  return res.json(posts);
 }
