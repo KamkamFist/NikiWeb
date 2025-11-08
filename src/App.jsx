@@ -3,14 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './index.css';
 import MainPage from './MainPage.jsx';
-import Cennik from './Cennik.jsx';
+import Art from './Arts.jsx';
+import Prices from './Prices.jsx';
+import Rules from './Rules.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/cennik" element={<Cennik />} />
+        <Route path="/art" element={<Art />} />
+        <Route path="/prices" element={<Prices />} />
+        <Route path="/rules" element={<Rules />} />
       </Routes>
     </Router>
   );

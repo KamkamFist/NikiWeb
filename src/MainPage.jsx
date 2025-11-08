@@ -26,8 +26,14 @@ function MainPage() {
         </div>
 
         <div id="ddown">
-          <button className="button" onClick={() => navigate('/cennik')}>
-            See my works
+          <button className="button" onClick={() => navigate('/Art')}>
+            Arts
+          </button>
+          <button className="button" onClick={() => navigate('/prices')}>
+            Prices
+          </button>
+          <button className="button" onClick={() => navigate('/rules')}>
+            Rules
           </button>
         </div>
       </div>
