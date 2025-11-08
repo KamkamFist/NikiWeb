@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const username = 'kicia.projects';
-  const APIFY_TOKEN = process.env.APIFY_TOKEN; // Twój token Apify
+  const APIFY_TOKEN = process.env.APIFY_TOKEN; // Twój token Apifys
 
   try {
     const response = await fetch(
