@@ -6,6 +6,7 @@ import MainPage from './MainPage.jsx';
 import Art from './Arts.jsx';
 import Prices from './Prices.jsx';
 import Rules from './Rules.jsx';
+import InstagramFeed from './InstagramFeed.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/art" element={<Art />} />
         <Route path="/prices" element={<Prices />} />
         <Route path="/rules" element={<Rules />} />
+        <Route path="/insta" element={<InstagramFeed />} />
       </Routes>
     </Router>
   );
