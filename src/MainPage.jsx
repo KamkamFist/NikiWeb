@@ -27,13 +27,13 @@ function MainPage() {
 
         <div id="ddown">
           <button className="button" onClick={() => navigate('/Art')}>
-            Arts
+            Moje Prace
           </button>
           <button className="button" onClick={() => navigate('/prices')}>
-            Prices
+            Cennik
           </button>
           <button className="button" onClick={() => navigate('/rules')}>
-            Rules
+            Zasady
           </button>
         </div>
       </div>

@@ -28,15 +28,7 @@ body {
 
 
 
-#dup {
 
-        height: 70%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .button {
     background-color: rgb(100, 78, 78);
@@ -50,7 +42,7 @@ body {
     text-decoration: none;  /* usuwa podkreślenie */
   color: inherit;         
 }
-#Arts {
+#Rules {
     width: 80vw;
     height: 70vh;
     background-color: rgb(100, 78, 78);
@@ -59,7 +51,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
      max-height: 600px;     
   overflow-y: auto;      
   padding-right: 10px;
@@ -84,34 +76,31 @@ body {
 .photos {
     border-radius: 20px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-}
-input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
 
 
-#Arts::-webkit-scrollbar {
-  width: 6px;
+#Rules {
+    overflow-y: auto; /* umożliwia przewijanie */
 }
 
-#Arts::-webkit-scrollbar-track {
-  background: #ddd;
-  border-radius: 3px;
+/* Scrollbar dla WebKit (Chrome, Safari, Opera) */
+#Rules::-webkit-scrollbar {
+    width: 6px;
 }
 
-#Arts::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
+#Rules::-webkit-scrollbar-track {
+    background: transparent; /* tor scrolla przezroczysty */
 }
 
-#Arts::-webkit-scrollbar-thumb:hover {
-  background: #666;
+#Rules::-webkit-scrollbar-thumb {
+    background: transparent; /* uchwyt scrolla przezroczysty */
+}
+
+#Rules::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2); /* lekko widoczny przy hover */
+}
+
+/* Scrollbar dla Firefox */
+#Rules {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* uchwyt i tor przezroczysty */
 }

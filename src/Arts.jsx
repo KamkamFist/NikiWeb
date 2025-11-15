@@ -6,23 +6,22 @@ function Art() {
   return (
     <>
     <div id="up">
-        <button className="button" onClick={() => navigate('/insta')}>
-            queue
-          </button>
-          <button className="button" onClick={() => navigate('/Art')}>
-            order
-          </button>
-          <button className="button" onClick={() => navigate('/rules')}>
-            Rules
-          </button>
-          <button className="button" onClick={() => navigate('/')}>
-            Home
-          </button>
+                <a className="button"
+                    href="https://www.national-geographic.pl/tag/orangutany/" target='_blank'
+                >
+                    Kolejka
+                </a>
+                <button className="button" onClick={() => navigate('/art')}>
+                    Moje prace
+                </button>
+                <button className="button" onClick={() => navigate('/')}>
+                    Strona główna
+                </button>
 
-    </div>
+            </div>
     <div id="down">
         <div id="dup">
-            <h2>My Arts</h2>
+            <h2>Moje prace</h2>
             <div id="Arts">
                 <div class="p"><img class="photos" s width="100%" height="100%"/></div>
                 <div class="p"></div>
