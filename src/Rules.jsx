@@ -23,7 +23,6 @@ function Rules() {
                 <div id="dup">
                     <h2>Zasady</h2>
                     <div id="Rules">
-                        <h2>REGULAMIN</h2>
 
 <h2>PŁATNOŚĆ</h2>
 <p>1.1 Po akceptacji szkicu przez klienta należy wpłacić 5-15% zaliczki w zależności od rozmiaru projektu, na koniec wykonanej pracy dopłacić umówioną kwotę.</p>
