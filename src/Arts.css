@@ -1,57 +1,9 @@
-body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
 
-#up {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#down {
-    height: 90vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-#dup {
-    height: 70%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.button {
-    background-color: rgb(100, 78, 78);
-    width: 20vw;
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 200%;
-    text-decoration: none; /* usuwa podkreślenie */
-    color: inherit;
-}
 
 #Arts {
     width: 80vw;
     height: 70vh;
-    background-color: rgb(100, 78, 78);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -59,10 +11,19 @@ body {
     align-items: center;
     overflow-y: scroll;
 }
+#dup{
+    display: flex;
+    flex-direction: column;
+}
 
 .art {
     width: 80%;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
 }
 
 
@@ -72,47 +33,19 @@ body {
 }
 
 #Arts::-webkit-scrollbar-track {
-    background: #ddd;
-    border-radius: 3px;
+    background: transparent;
 }
 
 #Arts::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 3px;
+    background: transparent;
 }
 
 #Arts::-webkit-scrollbar-thumb:hover {
-    background: #666;
+    background: rgba(0, 0, 0, 0.2);
 }
-@Media (max-width: 768px) {
-    #logo {
-        width: 80vw;
-        height: 80vw;
-    }
 
-    .buttons {
-        width: 60vw;
-        height: 25%;
-    }
-    #ddown {
-        flex-direction: column;
-        height: 60%;
-    }
-    h1 {
-        font-size: 100%;
-    }
-    h3 {
-        font-size: 80%; 
-    
-    }
-    .button {
-        font-size: 10%;
-        text-align: center;
-    }
-}
-@Media (max-width: 1083px) {
-    .button {
-        font-size: 120%;
-        text-align: center;
-    }
+/* Firefox */
+#Arts {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }

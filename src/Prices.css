@@ -1,74 +1,20 @@
-body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-#up{
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#down{
-    height: 90vh;
-    width: 100vw;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
 
 
 
-
-
-
-.button {
-    background-color: rgb(100, 78, 78);
-    width: 20vw;
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 200%;
-    text-decoration: none; /* usuwa podkreślenie */
-    color: inherit;
-}
-
-.p {
-    width: 20%;
-    height: 40%;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    justify-content: space-around
-}
-.p:hover {
-    transform: scale(1.3);
-    transition: 0.3s;
-    background-color: aliceblue;
-    image-rendering:unset;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dhw7QrCR_V1zg3F7ByGpfdby_ngT3q1NRw&s);
-    background-size: cover;
-    background-position: center;
-}
 .photos {
     border-radius: 20px;
 }
 
+#dup{
+    display: flex;
+    flex-direction: column;
+}
 
 #Prices {
     width: 80vw;
     height: 70vh;
     max-height: 600px;
-    background-color: rgb(100, 78, 78);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
@@ -76,6 +22,7 @@ body {
     flex-wrap: wrap;
     overflow-y: auto;
     padding: 20px;
+    color: black;
     gap: 20px; /* odstępy między sekcjami */
 }
 
@@ -123,7 +70,7 @@ body {
     border-radius: 15px;
     padding: 20px 30px;
     margin: 20px auto;
-    color: #fff;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
