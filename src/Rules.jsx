@@ -7,7 +7,7 @@ function Rules() {
         <>
             <div id="up">
                 <a className="button"
-                    href="https://www.national-geographic.pl/tag/orangutany/" target='_blank'
+                    href="https://docs.google.com/spreadsheets/d/1oeHHenr98qEB24aevOxLfmq4n6sxtTfGnf3c5p4kaUE/edit?usp=drivesdk" target='_blank'
                 >
                     Kolejka
                 </a>
