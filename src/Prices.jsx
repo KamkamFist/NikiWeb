@@ -14,12 +14,15 @@ function Prices() {
                 >
                     Kolejka
                 </a>
-                <button className="button" onClick={() => navigate('/art')}>
+                <a className="button" onClick={() => navigate('/art')}>
                     Moje prace
-                </button>
-                <button className="button" onClick={() => navigate('/')}>
-                    Strona główna
-                </button>
+                </a>
+                <a className="button" onClick={() => navigate('/rules')}>
+                    Zasady
+                </a>
+                <a className="button" onClick={() => navigate('/')}>
+                    Strona Główna
+                </a>
             </div>
             <div id="down">
                 <h2>Cennik</h2>

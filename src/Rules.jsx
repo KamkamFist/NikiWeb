@@ -11,12 +11,15 @@ function Rules() {
                 >
                     Kolejka
                 </a>
-                <button className="button" onClick={() => navigate('/art')}>
+                <a className="button" onClick={() => navigate('/art')}>
                     Moje prace
-                </button>
-                <button className="button" onClick={() => navigate('/')}>
-                    Strona główna
-                </button>
+                </a>
+                <a className="button" onClick={() => navigate('/prices')}>
+                    Cennik
+                </a>
+                <a className="button" onClick={() => navigate('/')}>
+                    Strona Główna
+                </a>
 
             </div>
             <div id="down">

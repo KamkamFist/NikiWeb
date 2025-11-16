@@ -84,3 +84,35 @@ body {
 #Arts::-webkit-scrollbar-thumb:hover {
     background: #666;
 }
+@Media (max-width: 768px) {
+    #logo {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .buttons {
+        width: 60vw;
+        height: 25%;
+    }
+    #ddown {
+        flex-direction: column;
+        height: 60%;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    h3 {
+        font-size: 80%; 
+    
+    }
+    .button {
+        font-size: 10%;
+        text-align: center;
+    }
+}
+@Media (max-width: 1083px) {
+    .button {
+        font-size: 120%;
+        text-align: center;
+    }
+}

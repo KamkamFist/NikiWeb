@@ -37,11 +37,14 @@ function Art() {
         <a className="button" href="https://docs.google.com/spreadsheets/d/1oeHHenr98qEB24aevOxLfmq4n6sxtTfGnf3c5p4kaUE/edit?usp=drivesdk" >
           Kolejka
         </a>
-        <a className="button" onClick={() => navigate('/art')}>
-          Moje prace
+        <a className="button" onClick={() => navigate('/rules')}>
+          Zasady
         </a>
+        <a className="button" onClick={() => navigate('/prices')}>
+                    Cennik
+                </a>
         <a className="button" onClick={() => navigate('/')}>
-          Strona główna
+          Strona Główna
         </a>
       </div>
 
