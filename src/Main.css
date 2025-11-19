@@ -8,17 +8,22 @@ body {
     padding: 0;
     margin: 0;
     background: #000000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 94, 1) 100%);
-}
+    /*background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 0, 94, 1) 100%);*/
+    /*background-image: url("https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg");
+    background-size: cover;
+    background-position: center;*/
+    background: linear-gradient(0deg,rgba(83, 22, 29, 1) 0%, rgba(255, 251, 240, 1) 50%, rgba(83, 22, 29, 1) 100%);}
+
 
 #up {
     height: 10vh;
     width: 100%;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
 }
 
 #down {
